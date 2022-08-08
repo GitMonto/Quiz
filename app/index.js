@@ -1,7 +1,8 @@
 const customer = {
-  firstname: "Marko",
-  lastname: "Milovic",
-  phonenumber: "07876132152",
+  firstName: "Marko",
+  lastName: "Milovic",
+  id: 1,
+  phoneNumber: "07876132152",
   email: "mmilovic21@gmail.com",
 };
 
@@ -23,7 +24,7 @@ const product = {
 customer.quantity = 7;
 customer.total = customer.quantity * product.price;
 console.log(customer);
-console.log(`Total: ${customer.total}`);
+console.log(`Total: $${customer.total}`);
 
 if (customer.total > 100) {
   console.log("True");
